@@ -14,7 +14,7 @@ export default function MainNav() {
   ];
 
   return (
-    <>
+    <div className="fixed top-0 left-0 w-full z-50">
       <button
         className="pr-2 absolute md:hidden right-0 top-4"
         title="menu"
@@ -22,7 +22,7 @@ export default function MainNav() {
       >
         <Menu />
       </button>
-      <header className="px-4 py-3 shadow flex justify-between text-gray-800 bg-white">
+      <header className="px-4 py-3 shadow flex justify-between  bg-white">
         {!state ? (
           <Link
             href="/"
@@ -48,7 +48,7 @@ export default function MainNav() {
                 {menus.map((item, idx) => (
                   <li
                     key={idx}
-                    className="text-gray-600 hover:text-rose-600 text-sm"
+                    className=" hover:text-rose-600 text-sm"
                   >
                     <Link href={item.path}>{item.title}</Link>
                   </li>
@@ -58,6 +58,6 @@ export default function MainNav() {
           </div>
         </div>
       </header>
-    </>
+    </div>
   );
 }

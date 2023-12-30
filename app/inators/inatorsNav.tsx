@@ -1,36 +1,218 @@
-"use client"
+"use client";
 
-import { Button } from '@/components/ui/button';
-import Link from 'next/link';
-import React from 'react'
+import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
+import Link from "next/link";
+import React, { useState } from "react";
+
+const components = [
+  {
+    name: "Button",
+    path: "/inators/button",
+  },
+  {
+    name: "Article",
+    path: "/inators/article",
+  },
+  {
+    name: "Avatar",
+    path: "/inators/avatar",
+  },
+  {
+    name: "Banner",
+    path: "/inators/banner",
+  },
+  {
+    name: "Blog",
+    path: "/inators/blog",
+  },
+  {
+    name: "Breadcrumb",
+    path: "/inators/breadcrumb",
+  },
+  {
+    name: "Call to action",
+    path: "/inators/call-to-action",
+  },
+  {
+    name: "Card",
+    path: "/inators/card",
+  },
+  {
+    name: "Carousel",
+    path: "/inators/carousel",
+  },
+  {
+    name: "Contact",
+    path: "/inators/contact",
+  },
+  {
+    name: "Error",
+    path: "/inators/error",
+  },
+  {
+    name: "Faq",
+    path: "/inators/faq",
+  },
+  {
+    name: "Feature",
+    path: "/inators/feature",
+  },
+  {
+    name: "Footer",
+    path: "/inators/footer",
+  },
+  {
+    name: "Form",
+    path: "/inators/form",
+  },
+  {
+    name: "Gallery",
+    path: "/inators/gallery",
+  },
+  {
+    name: "Header",
+    path: "/inators/header",
+  },
+  {
+    name: "Hero",
+    path: "/inators/hero",
+  },
+  {
+    name: "Input",
+    path: "/inators/input",
+  },
+  {
+    name: "Loading",
+    path: "/inators/loading",
+  },
+  {
+    name: "Login",
+    path: "/inators/login",
+  },
+  {
+    name: "Modal",
+    path: "/inators/modal",
+  },
+  {
+    name: "News",
+    path: "/inators/news",
+  },
+  {
+    name: "Pagination",
+    path: "/inators/pagination",
+  },
+  {
+    name: "Pricing",
+    path: "/inators/pricing",
+  },
+  {
+    name: "Profile",
+    path: "/inators/profile",
+  },
+  {
+    name: "Review",
+    path: "/inators/review",
+  },
+  {
+    name: "Shopping cart",
+    path: "/inators/shopping-cart",
+  },
+  {
+    name: "Sidebar",
+    path: "/inators/sidebar",
+  },
+  {
+    name: "Skeleton loader",
+    path: "/inators/skeleton-loader",
+  },
+  {
+    name: "Slider",
+    path: "/inators/slider",
+  },
+  {
+    name: "Snackbar",
+    path: "/inators/snackbar",
+  },
+  {
+    name: "Stats",
+    path: "/inators/stats",
+  },
+  {
+    name: "Steps",
+    path: "/inators/steps",
+  },
+  {
+    name: "Table",
+    path: "/inators/table",
+  },
+  {
+    name: "Tabs",
+    path: "/inators/tabs",
+  },
+  {
+    name: "Team",
+    path: "/inators/team",
+  },
+  {
+    name: "Testimonial",
+    path: "/inators/testimonial",
+  },
+  {
+    name: "Timeline",
+    path: "/inators/timeline",
+  },
+  {
+    name: "Toggle",
+    path: "/inators/toggle",
+  },
+  {
+    name: "Weather",
+    path: "/inators/weather",
+  },
+];
 
 const InatorsNav = () => {
+  const [searchTerm, setSearchTerm] = useState("");
+  const [filteredComponents, setFilteredComponents] = useState(components);
 
-    const components = [
-      {
-        name: 'Button',
-        path: '/inators/button'  
-      }
-    ]
+  const filterComponents = () => {
+    const filtered = components.filter((component) =>
+      component.name.toLowerCase().includes(searchTerm.toLowerCase())
+    );
+    setFilteredComponents(filtered);
+  };
 
   return (
-    <div className='max-w-7xl mx-auto container'>
+    <div className="max-w-7xl mx-auto container">
       <section className="py-6 text-gray-900">
         <div className="container mx-auto flex flex-col justify-center p-4 space-y-8 md:p-10 lg:space-y-0 lg:space-x-12 lg:justify-between lg:flex-row">
           <div className="flex flex-col space-y-4 text-center lg:text-left">
             <h1 className="text-5xl font-bold leadi">Components</h1>
             {/* <p className="text-lg">157 components in 41 categories</p> */}
           </div>
-          <div className="flex flex-row items-center self-center justify-center flex-shrink-0 shadow-md lg:justify-end">
+          <div className="flex flex-row items-center self-center justify-center flex-shrink-0 lg:justify-end">
             <div className="flex flex-row">
-              <input
+              <Input
                 type="text"
                 placeholder="filter components"
-                className="px-2 rounded-l-lg"
+                className="px-2 rounded-l-lg shadow-md "
+                value={searchTerm}
+                onChange={(e) => {
+                  setSearchTerm(e.target.value);
+                  filterComponents();
+                }}
+                onKeyDown={(e) => {
+                  if (e.key === "Enter") {
+                    filterComponents();
+                  }
+                }}
               />
               <Button
                 type="button"
-                className="font-semibold"
+                className="font-semibold bg-rose-600"
+                onClick={filterComponents}
+
               >
                 Search
               </Button>
@@ -40,20 +222,18 @@ const InatorsNav = () => {
       </section>
 
       <section>
-        <div>
-          {
-            components.map((component) => {
-              return (
-                <Link href={component.path} key={component.name}>
-                  <Button>{component.name}</Button>
-                </Link>
-              )
-            })
-          }
+        <div className="flex flex-wrap gap-2 justify-center">
+          {filteredComponents.map((component) => {
+            return (
+              <Link href={component.path} key={component.name}>
+                <Button className="">{component.name}</Button>
+              </Link>
+            );
+          })}
         </div>
       </section>
     </div>
   );
-}
+};
 
-export default InatorsNav
+export default InatorsNav;

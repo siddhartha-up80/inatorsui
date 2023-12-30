@@ -25,8 +25,7 @@ export default function RootLayout({
         <MainNav/>
         </div>
        
-       <div className='min-h-screen'>
-
+       <div className='min-h-screen mt-16'>
         {children}
        </div>
 

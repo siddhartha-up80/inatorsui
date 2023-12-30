@@ -3,7 +3,7 @@
 import * as React from "react";
 import Link from "next/link";
 import { Flower2, Menu } from "lucide-react";
-import { Button } from "../ui/button";
+import { Button } from "../../ui/button";
 
 export default function MainNav() {
   const [state, setState] = React.useState(false);

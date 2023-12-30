@@ -5,7 +5,6 @@ import Link from "next/link";
 const Page = () => {
   return (
     <div>
-      
       <section className="py-6 text-gray-900">
         <div className="container mx-auto flex flex-col items-center justify-center p-4 space-y-8 md:p-10 md:px-24 xl:px-48">
           {/* <h1 className="text-3xl font-bold leadi text-center">Star us on GitHub</h1> */}
@@ -14,10 +13,10 @@ const Page = () => {
           </p> */}
           <div className="flex flex-col space-y-4 sm:space-y-0 sm:flex-row sm:space-x-6">
             <Link href="https://github.com/siddhartha-up80" target="_blank">
-              <Button className="text-lg">Star us on GitHub</Button>
+              <Button className="text-lg bg-rose-600">Star this on GitHub</Button>
             </Link>
             <Link href="/contact">
-              <Button className="text-lg">Give Feedback</Button>
+              <Button className="text-lg bg-rose-600">Give Feedback</Button>
             </Link>
           </div>
         </div>
