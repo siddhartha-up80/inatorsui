@@ -17,7 +17,8 @@ const Page = () => {
           </h2>
           <p className="mt-4 text-lg leading-6 text-gray-600">
             If you have requests, suggestions or any other feedback, please
-            leave a message below and we'll get back to you as soon as possible.
+            leave a message below and we&apos;ll get back to you as soon as
+            possible.
           </p>
         </div>
 
