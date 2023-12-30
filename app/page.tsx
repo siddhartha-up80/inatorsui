@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import Image from "next/image";
 import Link from "next/link";
 
 export default function Home() {
@@ -23,10 +24,11 @@ export default function Home() {
             </div>
           </div>
           <div className="flex items-center justify-center p-6 mt-8 lg:mt-0 h-72 sm:h-80 lg:h-96 xl:h-112 2xl:h-128 ">
-            <img
+            <Image
               src="https://images.unsplash.com/photo-1543269664-76bc3997d9ea?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
               alt=""
-              className="object-contain h-72 sm:h-80 lg:h-96 xl:h-112 2xl:h-128 rounded-sm"
+              height={500}
+              width={500}
             />
           </div>
         </div>

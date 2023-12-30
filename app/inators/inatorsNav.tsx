@@ -1,16 +1,25 @@
 "use client"
 
 import { Button } from '@/components/ui/button';
+import Link from 'next/link';
 import React from 'react'
 
 const InatorsNav = () => {
+
+    const components = [
+      {
+        name: 'Button',
+        path: '/inators/button'  
+      }
+    ]
+
   return (
     <div className='max-w-7xl mx-auto container'>
       <section className="py-6 text-gray-900">
         <div className="container mx-auto flex flex-col justify-center p-4 space-y-8 md:p-10 lg:space-y-0 lg:space-x-12 lg:justify-between lg:flex-row">
           <div className="flex flex-col space-y-4 text-center lg:text-left">
             <h1 className="text-5xl font-bold leadi">Components</h1>
-            <p className="text-lg">157 components in 41 categories</p>
+            {/* <p className="text-lg">157 components in 41 categories</p> */}
           </div>
           <div className="flex flex-row items-center self-center justify-center flex-shrink-0 shadow-md lg:justify-end">
             <div className="flex flex-row">
@@ -32,7 +41,15 @@ const InatorsNav = () => {
 
       <section>
         <div>
-          <Button>dsfs</Button>
+          {
+            components.map((component) => {
+              return (
+                <Link href={component.path} key={component.name}>
+                  <Button>{component.name}</Button>
+                </Link>
+              )
+            })
+          }
         </div>
       </section>
     </div>
