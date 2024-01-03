@@ -1,3 +1,4 @@
+import InstallCode from "@/components/installcode";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import Link from "next/link";
@@ -6,7 +7,7 @@ export default function Home() {
   return (
     <main className="">
       <section className="">
-        <div className="max-w-7xl flex flex-col justify-center p-1 md:px-10 mx-auto sm:pt-12 lg:pt-24 lg:flex-row lg:justify-between items-center">
+        <div className="max-w-7xl flex flex-col justify-center p-1 md:px-10 mx-auto sm:pt-10 lg:flex-row lg:justify-between items-center">
           <div className="flex flex-col justify-center p-6 text-center rounded-sm lg:max-w-md xl:max-w-lg lg:text-left leading-snug">
             <h1 className="text-5xl font-bold leadi sm:text-6xl leading-snug">
               Kickstart your
@@ -16,7 +17,10 @@ export default function Home() {
             <p className="mt-6 mb-8 text-lg sm:mb-12 leading-snug">
               Inators UI is a collection of UI components and templates based on
               Tailwind and Shadcn/ui, just copy and use
-            </p>
+            </p>{" "}
+            <div className="mb-8 text-lg leading-snug">
+              <InstallCode installation={"npx shadcn-ui@latest init"} />
+            </div>
             <div className="flex flex-col space-y-4 sm:items-center sm:justify-center sm:flex-row sm:space-y-0 sm:space-x-4 lg:justify-start">
               <Link href="/inators">
                 <Button className="">Browse all Components</Button>
@@ -29,6 +33,7 @@ export default function Home() {
               alt=""
               height={500}
               width={500}
+              className="rounded-sm"
             />
           </div>
         </div>
@@ -126,6 +131,7 @@ export default function Home() {
                 alt=""
                 height={500}
                 width={500}
+                className="rounded-sm"
               />
             </div>
             <div className="flex flex-col justify-center flex-1 px-6 lg:flex-2">
@@ -156,6 +162,7 @@ export default function Home() {
                 alt=""
                 height={500}
                 width={500}
+                className="rounded-sm"
               />
             </div>
             <div className="flex flex-col justify-center flex-1 px-6 lg:flex-2">
@@ -183,6 +190,7 @@ export default function Home() {
                 alt=""
                 height={500}
                 width={500}
+                className="rounded-sm"
               />
             </div>
             <div className="flex flex-col justify-center flex-1 px-6 lg:flex-2">
@@ -233,7 +241,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-
       {/* banner section */}
 
       {/* faq section */}

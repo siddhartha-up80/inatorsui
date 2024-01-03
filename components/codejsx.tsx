@@ -13,7 +13,7 @@ const CodeJSX = ({code}) => {
 
   return (
     <div className="bg-gray-500 rounded-md">
-      <div className="min-w-[25rem] bg-[#3a404d] overflow-y-scroll overflow-x-hidden max-h-[70vh]">
+      <div className="min-w-[23rem] bg-[#3a404d] overflow-y-scroll overflow-x-hidden max-h-[70vh]">
         <div className="flex justify-between px-4 text-white text-xs items-center">
           <p className="text-sm">Example Code</p>
           {copy ? (
