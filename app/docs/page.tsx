@@ -119,9 +119,7 @@ Are you using React Server Components? › no / yes
                   </p>
                   <span className="">
                     <InstallCode
-                      installation={`npx shadcn-ui@latest add button dropdown-menu
-
-`}
+                      installation={`npx shadcn-ui@latest add button dropdown-menu`}
                     />
                   </span>
                 </div>
