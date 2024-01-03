@@ -19,20 +19,21 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <meta
+        name="google-site-verification"
+        content="wuKkVFD1dhs31EjQNk81yBbw-temshhMPPc8JGAUC94"
+      />
       <body className={inter.className}>
-        <div className=''>
-
-        <MainNav/>
+        <div className="">
+          <MainNav />
         </div>
-       
-       <div className='min-h-screen mt-16'>
-        {children}
-       </div>
+
+        <div className="min-h-screen mt-16">{children}</div>
 
         <div>
-          <MainFooter/>
+          <MainFooter />
         </div>
-        </body>
+      </body>
     </html>
-  )
+  );
 }
