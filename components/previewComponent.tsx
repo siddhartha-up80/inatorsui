@@ -13,9 +13,9 @@ const PreviewComponent = ({ children, code, installation }: any) => {
   const [fullscreen, setFullscreen] = React.useState(false);
 
   return (
-    <div className="md:mt-20 mt-10 max-w-[70vw] mx-auto">
+    <div className="md:mt-20 mt-10 max-w-[70vw] mx-auto shadow-lg">
       <section className="mx-auto overflow-hidden rounded-lg shadow-sm scrollbar-none">
-        <div className="overflow-hidden divide-y rounded shadow-sm bg-gray-100 divide-gray-700">
+        <div className="overflow-hidden divide-y rounded  divide-gray-700">
           <div className="flex justify-between px-2 py-4 overflow-x-auto sm:p-4 flex-nowrap">
             <div className="space-x-2">
               <Button
@@ -47,17 +47,18 @@ const PreviewComponent = ({ children, code, installation }: any) => {
               <Maximize2 />
             </button>
           </div>
-          <div className="relative">
+          <div className="relative md:p-10">
             {/**/}
             <>
               {showCode ? (
                 installation ? (
                   <>
                     <InstallCode installation={installation} />{" "}
+                  
                     <CodeJSX code={code} />
                   </>
                 ) : (
-                  <CodeJSX code={code} />
+                  <CodeJSX code={code}  />
                 )
               ) : (
                 <div className="p-3 px-6 min-h-48 flex justify-center items-center">
@@ -75,13 +76,13 @@ const PreviewComponent = ({ children, code, installation }: any) => {
       </section>
 
       {fullscreen && (
-        <section className="bg-white min-h-screen w-screen absolute top-0 left-0 p-2">
+        <section className="bg-white min-h-screen w-screen fixed top-16 left-0 p-2 z-30">
           {children}
 
           <button
             title="Maximize"
             type="button"
-            className="px-2 text-sm rounded-md focus-visible:bg-opacity-50 hover:bg-rose-600 hover:text-white absolute right-5 bottom-5"
+            className="px-2 text-sm rounded-md focus-visible:bg-opacity-50 hover:bg-rose-600 hover:text-white absolute right-5 bottom-32"
             onClick={() => setFullscreen(!fullscreen)}
           >
             <Maximize2 />

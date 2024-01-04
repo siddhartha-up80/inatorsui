@@ -6,13 +6,13 @@ import React, { useState } from "react";
 import SyntaxHighlighter from "react-syntax-highlighter";
 import { atomOneDark } from "react-syntax-highlighter/dist/esm/styles/hljs";
 
-const CodeJSX = ({code}) => {
-  const codeString = code;
+const CodeJSX = ({ code }) => {
+  let codeString = code;
 
   const [copy, setCopy] = useState(false);
 
   return (
-    <div className="bg-gray-500 rounded-md">
+    <div className="bg-gray-500 rounded-md space-y-2 gap-2">
       <div className="min-w-[23rem] bg-[#3a404d] overflow-y-scroll overflow-x-hidden max-h-[70vh]">
         <div className="flex justify-between px-4 text-white text-xs items-center">
           <p className="text-sm">Example Code</p>
