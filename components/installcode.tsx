@@ -40,6 +40,7 @@ const InstallCode = ({ installation }) => {
             ) : (
               <button
                 className="py-1 inline-flex items-center gap-1"
+                title="clipboard"
                 onClick={() => {
                   navigator.clipboard.writeText(codeString);
                   setCopy(true);

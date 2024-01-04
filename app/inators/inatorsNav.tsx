@@ -7,16 +7,8 @@ import React, { useState } from "react";
 
 const components = [
   {
-    name: "Button",
-    path: "/inators/button",
-  },
-  {
     name: "Article",
     path: "/inators/article",
-  },
-  {
-    name: "Avatar",
-    path: "/inators/avatar",
   },
   {
     name: "Banner",
@@ -29,6 +21,10 @@ const components = [
   {
     name: "Breadcrumb",
     path: "/inators/breadcrumb",
+  },
+  {
+    name: "Button",
+    path: "/inators/button",
   },
   {
     name: "Call to action",

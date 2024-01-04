@@ -11,6 +11,7 @@ export default function MainNav() {
   const menus = [
     { title: "Components", path: "/inators" },
     { title: "Documentation", path: "/docs" },
+    { title: "Feedback", path: "/contact" },
   ];
 
   return (
