@@ -16,6 +16,7 @@
     "@radix-ui/react-tabs": "^1.0.4",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.0.0",
+    "embla-carousel-react": "^8.0.0-rc18",
     "lucide-react": "^0.302.0",
     "mongoose": "^8.0.3",
     "next": "14.0.4",
