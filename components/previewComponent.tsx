@@ -76,13 +76,13 @@ const PreviewComponent = ({ children, code, installation }: any) => {
       </section>
 
       {fullscreen && (
-        <section className="bg-white min-h-screen w-screen fixed top-16 left-0 p-2 z-30">
+        <section className="bg-white min-h-screen w-screen fixed top-0 left-0 p-2 z-50 overflow-y-scroll">
           {children}
 
           <button
             title="Maximize"
             type="button"
-            className="px-2 text-sm rounded-md focus-visible:bg-opacity-50 hover:bg-rose-600 hover:text-white absolute right-5 bottom-32"
+            className="p-2 bg-black text-white text-sm rounded-md focus-visible:bg-opacity-50 hover:bg-rose-600 hover:text-white absolute right-10 top-10"
             onClick={() => setFullscreen(!fullscreen)}
           >
             <Maximize2 />
