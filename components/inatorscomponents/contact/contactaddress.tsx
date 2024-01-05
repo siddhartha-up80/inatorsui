@@ -1,17 +1,4 @@
-import Contactaddress from "@/components/inatorscomponents/contact/contactaddress";
-import Contactsimple from "@/components/inatorscomponents/contact/contactsimple";
-import PreviewComponent from "@/components/previewComponent";
-import React from "react";
-
-const Page = () => {
-  const Types = [
-    {
-      name: "Contactaddress",
-      component: <Contactaddress />,
-      installation: `npx shadcn-ui@latest add button
-`,
-      code: `
-      "use client"
+"use client"
 
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
@@ -155,32 +142,3 @@ const Contactaddress = () => {
 }
 
 export default Contactaddress
-`,
-    },
-    {
-      name: "Contactsimple",
-      component: <Contactsimple/>,
-      installation: `npx shadcn-ui@latest add button card`,
-      code: ``,
-    },
-
-  ];
-
-  return (
-    <div>
-      {Types.map((type, index) => {
-        return (
-          <PreviewComponent
-            code={type.code}
-            installation={type.installation}
-            key={index}
-          >
-            {type.component}
-          </PreviewComponent>
-        );
-      })}
-    </div>
-  );
-};
-
-export default Page;
