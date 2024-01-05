@@ -28,7 +28,7 @@ const components = [
   },
   {
     name: "Call to action",
-    path: "/inators/call-to-action",
+    path: "/inators/calltoaction",
   },
   {
     name: "Card",
@@ -112,7 +112,7 @@ const components = [
   },
   {
     name: "Shopping cart",
-    path: "/inators/shopping-cart",
+    path: "/inators/shoppingcart",
   },
   {
     name: "Sidebar",
@@ -120,7 +120,7 @@ const components = [
   },
   {
     name: "Skeleton loader",
-    path: "/inators/skeleton-loader",
+    path: "/inators/skeletonloader",
   },
   {
     name: "Slider",
