@@ -16,17 +16,15 @@ const Featurebannerimage = () => {
               className="h-full aspect-video  object-top object-cover"
             />
             <div className="flex flex-col justify-center flex-1 p-6 shadow-md">
-              <span className="text-xs uppercase">Join, it's free</span>
+              <span className="text-xs uppercase">Join, it&apos;s free</span>
               <h3 className="text-3xl font-bold">
-                We're not reinventing the wheel
+                We&apos;re not reinventing the wheel
               </h3>
               <p className="my-6">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor
                 aliquam possimus quas, error esse quos.
               </p>
-              <Button  className="self-start">
-                Action
-              </Button>
+              <Button className="self-start">Action</Button>
             </div>
           </div>
           <div className="flex flex-col overflow-hidden rounded-md shadow-sm lg:flex-row-reverse">
@@ -38,17 +36,15 @@ const Featurebannerimage = () => {
               className="h-full aspect-video   object-top object-cover"
             />
             <div className="flex flex-col justify-center flex-1 p-6 shadow-md">
-              <span className="text-xs uppercase">Join, it's free</span>
+              <span className="text-xs uppercase">Join, it&apos;s free</span>
               <h3 className="text-3xl font-bold">
-                We're not reinventing the wheel
+                We&apos;re not reinventing the wheel
               </h3>
               <p className="my-6">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor
                 aliquam possimus quas, error esse quos.
               </p>
-              <Button  className="self-start">
-                Action
-              </Button>
+              <Button className="self-start">Action</Button>
             </div>
           </div>
           <div className="flex flex-col overflow-hidden rounded-md shadow-sm lg:flex-row">
@@ -60,17 +56,15 @@ const Featurebannerimage = () => {
               className="h-full aspect-video  object-top object-cover "
             />
             <div className="flex flex-col justify-center flex-1 p-6 shadow-md">
-              <span className="text-xs uppercase">Join, it's free</span>
+              <span className="text-xs uppercase">Join, it&apos;s free</span>
               <h3 className="text-3xl font-bold">
-                We're not reinventing the wheel
+                We&apos;re not reinventing the wheel
               </h3>
               <p className="my-6">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor
                 aliquam possimus quas, error esse quos.
               </p>
-              <Button  className="self-start">
-                Action
-              </Button>
+              <Button className="self-start">Action</Button>
             </div>
           </div>
         </div>
