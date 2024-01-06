@@ -13,7 +13,7 @@ const PreviewComponent = ({ children, code, installation }: any) => {
   const [fullscreen, setFullscreen] = React.useState(false);
 
   return (
-    <div className="md:mt-20 mt-10 max-w-[70vw] mx-auto shadow-lg">
+    <div className="md:mt-20 mt-10 max-w-[85vw] mx-auto shadow-lg">
       <section className="mx-auto overflow-hidden rounded-lg shadow-sm scrollbar-none">
         <div className="overflow-hidden divide-y rounded  divide-gray-700">
           <div className="flex justify-between px-2 py-4 overflow-x-auto sm:p-4 flex-nowrap">

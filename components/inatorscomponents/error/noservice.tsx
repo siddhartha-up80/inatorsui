@@ -5,7 +5,7 @@ import React from 'react'
 const Noservice = () => {
   return (
     <div>
-      <section className="flex items-center h-full sm:p-16 shadow-md">
+      <section className="flex items-center h-full sm:p-16">
         <div className="container flex flex-col items-center justify-center px-5 mx-auto my-8 space-y-8 text-center sm:max-w-md">
           <svg
             xmlns="http://www.w3.org/2000/svg"
