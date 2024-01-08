@@ -53,17 +53,17 @@ const PreviewComponent = ({ children, code, installation }: any) => {
               {showCode ? (
                 installation ? (
                   <>
-                    <InstallCode installation={installation} />{" "}
-                  
+                    <div className="flex justify-center">
+                      <InstallCode installation={installation} />{" "}
+                    </div>
+
                     <CodeJSX code={code} />
                   </>
                 ) : (
-                  <CodeJSX code={code}  />
+                  <CodeJSX code={code} />
                 )
               ) : (
-                <div className="p-3 px-6 min-h-48 flex justify-center items-center">
-                  {children}
-                </div>
+                <div className="p-3 px-6 min-h-48">{children}</div>
               )}
             </>
 

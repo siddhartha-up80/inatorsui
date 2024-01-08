@@ -5,10 +5,18 @@ import InatorsNav from "./inatorsNav";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Inators UI | Components",
+  title: "InatorsUI | Shadcn-ui based components for nextjs developers",
   description:
-    "Inators UI is a collection of UI components and templates based on Tailwind and Shadcn/ui, just copy and use",
-  keywords: ["Tailwind", "Shadcn/ui", "Components", "Inators UI"],
+    "inatorsui is a collection of UI components and templates based on Tailwind and Shadcn/ui for nextjs, just copy and use",
+  keywords: [
+    "Tailwind",
+    "Shadcn/ui",
+    "Components",
+    "Inators UI",
+    "Inatorsui",
+    "Inators",
+    "inatorsui",
+  ],
 };
 
 

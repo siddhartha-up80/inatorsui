@@ -9,7 +9,7 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "InatorsUI | Shadcn-ui based components for nextjs developers",
   description:
-    "inatorsui is a collection of UI components and templates based on Tailwind and Shadcn/ui for nextjs, just copy and use",
+    "inatorsui is a collection of nextjs components and templates based on Tailwind and Shadcn/ui for nextjs, just copy and use",
   keywords: [
     "Tailwind",
     "Shadcn/ui",

@@ -67,10 +67,6 @@ const components = [
     path: "/inators/gallery",
   },
   {
-    name: "Header",
-    path: "/inators/header",
-  },
-  {
     name: "Hero",
     path: "/inators/hero",
   },
@@ -89,6 +85,9 @@ const components = [
   {
     name: "Modal",
     path: "/inators/modal",
+  }, {
+    name: "Navbar",
+    path: "/inators/navbar",
   },
   {
     name: "News",
@@ -181,7 +180,7 @@ const InatorsNav = () => {
 
   return (
     <div className="max-w-7xl mx-auto container">
-      <section className="py-6 text-gray-900">
+      <section className="py-6 ">
         <div className="container mx-auto flex flex-col justify-center p-4 space-y-8 md:p-10 lg:space-y-0 lg:space-x-12 lg:justify-between lg:flex-row">
           <div className="flex flex-col space-y-4 text-center lg:text-left">
             <h1 className="text-5xl font-bold leadi">Components</h1>
@@ -206,7 +205,7 @@ const InatorsNav = () => {
               />
               <Button
                 type="button"
-                className="font-semibold bg-rose-600"
+                className="font-semibold bg-rose-600 shadow-md"
                 onClick={filterComponents}
 
               >
@@ -222,7 +221,7 @@ const InatorsNav = () => {
           {filteredComponents.map((component) => {
             return (
               <Link href={component.path} key={component.name}>
-                <Button className="">{component.name}</Button>
+                <Button className="shadow-md">{component.name}</Button>
               </Link>
             );
           })}

@@ -12,7 +12,7 @@ const InstallCode = ({ installation }) => {
   const [copy, setCopy] = useState(false);
 
   return (
-    <div className=" rounded-md mx-auto flex justify-center my-2">
+    <div className=" rounded-md mx-auto my-2">
       <div className="min-w-[22rem] w-max overflow-y-hidden overflow-x-scroll md:overflow-x-hidden max-h-[70vh] max-w-[70vw] ">
         <span className="flex items-center p-1 w-max bg-[#3a404d] rounded-md text-white">
           {/* <span className="relative left-2 pr-2">$</span> */}
