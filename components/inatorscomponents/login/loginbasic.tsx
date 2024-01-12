@@ -10,11 +10,9 @@ const Loginbasic = () => {
       <div className="flex flex-col max-w-md p-6 rounded-md sm:p-10 shadow-md">
         <div className="mb-8 text-center">
           <h1 className="my-3 text-4xl font-bold">Sign in</h1>
-          <p className="text-sm ">
-            Sign in to access your account
-          </p>
+          <p className="text-sm ">Sign in to access your account</p>
         </div>
-        <form  action="" className="space-y-12">
+        <form action="" className="space-y-12">
           <div className="space-y-4">
             <div>
               <Label htmlFor="email" className="block mb-2 text-sm">
@@ -33,11 +31,7 @@ const Loginbasic = () => {
                 <Label htmlFor="password" className="text-sm">
                   Password
                 </Label>
-                <Link
-                
-                  href="/forget"
-                  className="text-xs hover:underline "
-                >
+                <Link href="/forget" className="text-xs hover:underline ">
                   Forgot password?
                 </Link>
               </div>
@@ -52,19 +46,13 @@ const Loginbasic = () => {
           </div>
           <div className="space-y-2">
             <div>
-              <Button
-                type="button"
-                className="w-full px-8 py-3 font-semibold"
-              >
+              <Button type="button" className="w-full px-8 py-3 font-semibold">
                 Sign in
               </Button>
             </div>
             <p className="px-6 text-sm text-center ">
-              Don't have an account yet?
-              <Link
-                href="/signup"
-                className="hover:underline text-rose-600"
-              >
+              Don&apos;t have an account yet?
+              <Link href="/signup" className="hover:underline text-rose-600">
                 Sign up
               </Link>
               .

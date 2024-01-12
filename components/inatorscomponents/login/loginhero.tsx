@@ -39,7 +39,7 @@ const Loginhero = () => {
             </div>
             <Button className="py-2 px-8 w-full">Sign In</Button>
             <p className="text-xs  mt-3">
-              Literally you probably haven't heard of them jean shorts.
+              Literally you probably haven&apos;t heard of them jean shorts.
             </p>
           </div>
         </div>
