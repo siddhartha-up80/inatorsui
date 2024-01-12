@@ -41,6 +41,9 @@ const components = [
   {
     name: "Contact",
     path: "/inators/contact",
+  },{
+    name: "Dialog",
+    path: "/inators/dialog",
   },
   {
     name: "Error",
@@ -82,10 +85,7 @@ const components = [
     name: "Login",
     path: "/inators/login",
   },
-  {
-    name: "Modal",
-    path: "/inators/modal",
-  }, {
+ {
     name: "Navbar",
     path: "/inators/navbar",
   },

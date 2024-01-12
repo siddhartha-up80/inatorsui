@@ -5,7 +5,7 @@ import Link from "next/link";
 import { Flower2, Menu } from "lucide-react";
 import { Button } from "../../ui/button";
 
-export default function MainNav() {
+export default function Navbarbasic() {
   const [state, setState] = React.useState(false);
 
   const menus = [
@@ -16,18 +16,17 @@ export default function MainNav() {
   ];
 
   return (
-    <header className="p-2 shadow text-gray-800">
+    <header className="p-2 shadow text-gray-800 w-full h-max">
       <div className="flex justify-between">
         <div className="flex">
           {!state ? (
-            <a
-              rel="noopener noreferrer"
-              href="#"
+            <Link
+              href="/"
               aria-label="Back to homepage"
               className=" flex md:justify-center justify-start items-center"
             >
               <Flower2 />
-            </a>
+            </Link>
           ) : null}
 
           <div
@@ -48,7 +47,7 @@ export default function MainNav() {
           </div>
         </div>
         <div className="items-center flex-shrink-0 hidden lg:flex">
-          <Button className="px-8 py-2 font-semibold rounded bg-rose-600 text-gray-50">
+          <Button className="px-8 py-2 font-semibold rounded hover:bg-rose-600 text-gray-50">
             Log in
           </Button>
         </div>
