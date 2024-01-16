@@ -3,7 +3,7 @@ import React from "react";
 
 const Footerbasiclarge = () => {
   return (
-    <div>
+    <div className="min-w-[80vw]">
       <footer className="py-6 shadow-md">
         <div className="container px-6 mx-auto space-y-6 divide-y divide-gray-400 md:space-y-12 divide-opacity-50">
           <div className="grid grid-cols-12">

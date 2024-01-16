@@ -90,10 +90,6 @@ const components = [
     path: "/inators/navbar",
   },
   {
-    name: "News",
-    path: "/inators/news",
-  },
-  {
     name: "Pagination",
     path: "/inators/pagination",
   },

@@ -3,7 +3,7 @@ import React from 'react'
 
 const Footerbasiclinks = () => {
   return (
-    <div>
+    <div className="min-w-[80vw]">
       <footer className="px-4 divide-y shadow-md">
         <div className="container flex flex-col justify-between py-10 mx-auto space-y-8 lg:flex-row lg:space-y-0">
           <div className="lg:w-1/3">
@@ -32,22 +32,22 @@ const Footerbasiclinks = () => {
               <h3 className="tracki uppercase ">Product</h3>
               <ul className="space-y-1">
                 <li>
-                  <Link target='_blank' href="#">
+                  <Link target="_blank" href="#">
                     Features
                   </Link>
                 </li>
                 <li>
-                  <Link target='_blank' href="#">
+                  <Link target="_blank" href="#">
                     Integrations
                   </Link>
                 </li>
                 <li>
-                  <Link target='_blank' href="#">
+                  <Link target="_blank" href="#">
                     Pricing
                   </Link>
                 </li>
                 <li>
-                  <Link target='_blank' href="#">
+                  <Link target="_blank" href="#">
                     FAQ
                   </Link>
                 </li>
@@ -57,12 +57,12 @@ const Footerbasiclinks = () => {
               <h3 className="tracki uppercase ">Company</h3>
               <ul className="space-y-1">
                 <li>
-                  <Link target='_blank' href="#">
+                  <Link target="_blank" href="#">
                     Privacy
                   </Link>
                 </li>
                 <li>
-                  <Link target='_blank' href="#">
+                  <Link target="_blank" href="#">
                     Terms of Service
                   </Link>
                 </li>
@@ -72,17 +72,17 @@ const Footerbasiclinks = () => {
               <h3 className="uppercase ">Developers</h3>
               <ul className="space-y-1">
                 <li>
-                  <Link target='_blank' href="#">
+                  <Link target="_blank" href="#">
                     Public API
                   </Link>
                 </li>
                 <li>
-                  <Link target='_blank' href="#">
+                  <Link target="_blank" href="#">
                     Documentation
                   </Link>
                 </li>
                 <li>
-                  <Link target='_blank' href="#">
+                  <Link target="_blank" href="#">
                     Guides
                   </Link>
                 </li>
