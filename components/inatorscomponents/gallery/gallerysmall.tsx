@@ -13,7 +13,7 @@ const Gallerysmall = () => {
               title=""
               alt=""
               className="object-cover w-full shadow-md aspect-square"
-              src="https://source.unsplash.com/random/300x300/?girl=1"
+              src="https://source.unsplash.com/random/300x300/?woman=1"
             />
             <Image
               height={800}
@@ -21,7 +21,7 @@ const Gallerysmall = () => {
               title=""
               alt=""
               className="object-cover w-full shadow-md aspect-square"
-              src="https://source.unsplash.com/random/300x300/?girl=2"
+              src="https://source.unsplash.com/random/300x300/?woman=2"
             />
             <Image
               height={800}
@@ -29,7 +29,7 @@ const Gallerysmall = () => {
               title=""
               alt=""
               className="object-cover w-full shadow-md aspect-square"
-              src="https://source.unsplash.com/random/300x300/?girl=3"
+              src="https://source.unsplash.com/random/300x300/?woman=3"
             />
             <Image
               height={800}
@@ -37,7 +37,7 @@ const Gallerysmall = () => {
               title=""
               alt=""
               className="object-cover w-full shadow-md aspect-square"
-              src="https://source.unsplash.com/random/300x300/?girl=4"
+              src="https://source.unsplash.com/random/300x300/?woman=4"
             />
           </div>
         </div>
