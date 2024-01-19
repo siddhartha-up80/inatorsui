@@ -147,7 +147,8 @@ export default function Home() {
                 {" "}
                 Inators UI is a toolkit for developers and designers to make
                 creating nextjs client side as well as server side interfaces
-                easier. Inspired from Mamba UI, we have multiple components to
+                easier. Using Shadcn-ui components as base and added missing
+                necessary components, Inators UI have multiple components to
                 help you get started. Everything is modular and customizable to
                 fit your project. From cards to buttons to blogs, you can
                 quickly create a variety of layouts that is responsible for

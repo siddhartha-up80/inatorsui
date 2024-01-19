@@ -113,16 +113,9 @@ const components = [
     name: "Sidebar",
     path: "/inators/sidebar",
   },
+
   {
-    name: "Skeleton loader",
-    path: "/inators/skeletonloader",
-  },
-  {
-    name: "Slider",
-    path: "/inators/slider",
-  },
-  {
-    name: "Snackbar",
+    name: "Snackbar Alerts",
     path: "/inators/snackbar",
   },
   {
