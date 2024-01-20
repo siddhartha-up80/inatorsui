@@ -5,7 +5,7 @@ import React from "react";
 
 const Bigblog = () => {
   return (
-    <div>
+    <div className="w-full">
       <section className="shadow-md">
         <div className="container max-w-6xl p-6 mx-auto space-y-6 sm:space-y-12">
           <Link
@@ -183,9 +183,7 @@ const Bigblog = () => {
             </Link>
           </div>
           <div className="flex justify-center">
-            <Button
-              className="px-6 py-3 hover:underline shadow-sm "
-            >
+            <Button className="px-6 py-3 hover:underline shadow-sm ">
               Load more posts...
             </Button>
           </div>

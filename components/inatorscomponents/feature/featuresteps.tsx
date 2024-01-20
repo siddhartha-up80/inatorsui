@@ -2,7 +2,7 @@ import React from 'react'
 
 const Featuresteps = () => {
   return (
-    <div>
+    <div className="w-full">
       <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20 shadow-md">
         <h2 className="mb-8 text-4xl font-bold leadi text-center">
           What do we have to offer?

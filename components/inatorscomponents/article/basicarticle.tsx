@@ -3,7 +3,7 @@ import React from 'react'
 
 const BasicArticle = () => {
   return (
-    <div>
+    <div className='w-full'>
       <article className="max-w-2xl px-6 py-24 mx-auto space-y-12 shadow-md">
         <div className="w-full mx-auto space-y-4 text-center">
           <p className="text-xs font-semibold tracki uppercase">#TailwindCSS</p>

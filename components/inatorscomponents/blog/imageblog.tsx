@@ -3,7 +3,7 @@ import React from 'react'
 
 const Imageblog = () => {
   return (
-    <div>
+    <div className="w-full">
       <div className="shadow-md">
         <div className="container grid grid-cols-12 mx-auto">
           <div

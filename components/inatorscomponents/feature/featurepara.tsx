@@ -3,7 +3,7 @@ import React from "react";
 
 const Featurepara = () => {
   return (
-    <div>
+    <div className="w-full">
       <section className="m-4 md:m-8 shadow-md">
         <div className="container p-4 mx-auto my-6 space-y-1 text-center">
           <span className="text-xs font-semibold tracki uppercase text-rose-600">

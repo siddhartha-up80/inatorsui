@@ -4,7 +4,7 @@ import React from "react";
 
 const BigBanner = () => {
   return (
-    <div>
+    <div className="w-full">
       <div className="p-6 py-12 bg-rose-600 text-gray-50 shadow-md">
         <div className="container mx-auto">
           <div className="flex flex-col lg:flex-row items-center justify-between">

@@ -3,7 +3,7 @@ import React from 'react'
 
 const Featurebanner = () => {
   return (
-    <div>
+    <div className="w-full">
       <section className="shadow-md">
         <div className="flex flex-col mx-auto lg:flex-row">
           <div

@@ -2,7 +2,7 @@ import React from 'react'
 
 const Featurecard = () => {
   return (
-    <div>
+    <div className="w-full">
       <section className="m-4 md:m-8 shadow-md px-4 py-2">
         <div className="container mx-auto p-4 my-6 space-y-2 text-center">
           <h2 className="text-5xl font-bold">Built to empower every team</h2>
@@ -29,7 +29,7 @@ const Featurecard = () => {
               <p>Blanditiis aut mollitia ex</p>
             </div>
           </div>
-            <div className="flex flex-col items-center p-4 shadow-sm">
+          <div className="flex flex-col items-center p-4 shadow-sm">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 20 20"
@@ -49,7 +49,7 @@ const Featurecard = () => {
               <p>Blanditiis aut mollitia ex</p>
             </div>
           </div>
-            <div className="flex flex-col items-center p-4 shadow-sm">
+          <div className="flex flex-col items-center p-4 shadow-sm">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 20 20"
@@ -69,7 +69,7 @@ const Featurecard = () => {
               <p>Blanditiis aut mollitia ex</p>
             </div>
           </div>
-            <div className="flex flex-col items-center p-4 shadow-sm">
+          <div className="flex flex-col items-center p-4 shadow-sm">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 20 20"
@@ -89,7 +89,7 @@ const Featurecard = () => {
               <p>Blanditiis aut mollitia ex</p>
             </div>
           </div>
-            <div className="flex flex-col items-center p-4 shadow-sm">
+          <div className="flex flex-col items-center p-4 shadow-sm">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 20 20"
@@ -109,7 +109,7 @@ const Featurecard = () => {
               <p>Blanditiis aut mollitia ex</p>
             </div>
           </div>
-            <div className="flex flex-col items-center p-4 shadow-sm">
+          <div className="flex flex-col items-center p-4 shadow-sm">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 20 20"

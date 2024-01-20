@@ -4,7 +4,7 @@ import React from 'react'
 
 const Banneractionimage = () => {
   return (
-    <div>
+    <div className='w-full'>
       <div
         className="w-full bg-gray-500 shadow-md"
         style={{

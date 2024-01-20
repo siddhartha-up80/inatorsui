@@ -5,11 +5,11 @@ import React from "react";
 
 const Heroleft = () => {
   return (
-    <div>
+    <div className="w-full">
       <section className="shadow-md">
-        <div className="container flex flex-col justify-center p-6 mx-auto sm:py-12 lg:py-24 lg:flex-row lg:justify-between">
+        <div className="flex flex-col justify-center p-6 mx-auto sm:py-12 lg:py-24 lg:flex-row lg:justify-between">
           <div className="flex flex-col justify-center p-6 text-center rounded-sm lg:max-w-md xl:max-w-lg lg:text-left">
-            <h1 className="text-5xl font-bold leadi sm:text-6xl">
+            <h1 className="text-3xl font-bold leadi sm:text-5xl">
               Ac mattis
               <span className="text-rose-600">senectus</span>erat pharetra
             </h1>
@@ -36,8 +36,8 @@ const Heroleft = () => {
           </div>
           <div className="flex items-center justify-center p-6 mt-8 lg:mt-0 h-72 sm:h-80 lg:h-96 xl:h-112 2xl:h-128">
             <Image
-                height={800}
-                width={1000}
+              height={800}
+              width={1000}
               src="https://images.unsplash.com/photo-1556740758-90de374c12ad?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
               alt=""
               className="object-contain h-72 sm:h-80 lg:h-96 xl:h-112 2xl:h-128"

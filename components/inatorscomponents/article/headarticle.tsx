@@ -3,29 +3,20 @@ import React from 'react'
 
 const HeadArticle = () => {
   return (
-    <div>
+    <div className="w-full">
       <article className="max-w-2xl px-6 py-24 mx-auto space-y-16 shadow-md">
         <div className="w-full mx-auto space-y-4">
           <h1 className="text-5xl font-bold leadi">
             Interdum et malesuada fames ac ante ipsum primis in faucibus?
           </h1>
           <div className="flex flex-wrap space-x-2 text-sm ">
-            <Link
-              href="#"
-              className="p-1 hover:underline"
-            >
+            <Link href="#" className="p-1 hover:underline">
               #MambaUI
             </Link>
-            <Link
-              href="#"
-              className="p-1 hover:underline"
-            >
+            <Link href="#" className="p-1 hover:underline">
               #TailwindCSS
             </Link>
-            <Link
-              href="#"
-              className="p-1 hover:underline"
-            >
+            <Link href="#" className="p-1 hover:underline">
               #Angular
             </Link>
           </div>
@@ -39,7 +30,7 @@ const HeadArticle = () => {
               <span>Leroy Jenkins</span>
             </Link>
             on
-            <time >Feb 12th 2021</time>
+            <time>Feb 12th 2021</time>
           </p>
         </div>
         <div className="">

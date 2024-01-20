@@ -4,7 +4,7 @@ import React from 'react'
 
 const Featurebannerimage = () => {
   return (
-    <div>
+    <div className="w-full">
       <section className="p-4 lg:p-8 shadow-md">
         <div className="container mx-auto space-y-12">
           <div className="flex flex-col overflow-hidden rounded-md shadow-sm lg:flex-row ">

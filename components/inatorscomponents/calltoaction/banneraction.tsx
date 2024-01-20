@@ -3,7 +3,7 @@ import React from "react";
 
 const Banneraction = () => {
   return (
-    <div>
+    <div className="w-full">
       <section className="py-6 shadow-md">
         <div className="container mx-auto flex flex-col items-center justify-center p-4 space-y-8 md:p-10 lg:space-y-0 lg:flex-row lg:justify-between">
           <h1 className="text-3xl font-semibold leadi text-center lg:text-left">

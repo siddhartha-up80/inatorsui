@@ -3,7 +3,7 @@ import React from 'react'
 
 const SmallBanner = () => {
   return (
-    <div>
+    <div className='w-full'>
       <div className="px-8 py-2 shadow-md">
         <div className="flex items-center mx-auto container justify-center md:justify-between py-2">
           <div>

@@ -4,7 +4,7 @@ import React from 'react'
 
 const ImageArticle = () => {
   return (
-    <div>
+    <div className="w-full">
       <div className="p-5 mx-auto sm:p-10 md:p-16 shadow-md">
         <div className="flex flex-col max-w-3xl mx-auto overflow-hidden rounded">
           <Image
@@ -24,10 +24,7 @@ const ImageArticle = () => {
               </Link>
               <p className="text-xs ">
                 By
-                <Link
-                  href="#"
-                  className="text-xs hover:underline"
-                >
+                <Link href="#" className="text-xs hover:underline">
                   Leroy Jenkins
                 </Link>
               </p>

@@ -18,7 +18,7 @@ const Hero = () => {
             />
           </div>
           <div className="flex flex-col justify-center p-6 text-center rounded-sm lg:max-w-md xl:max-w-lg lg:text-left">
-            <h1 className="text-5xl font-bold leadi sm:text-6xl">
+            <h1 className="text-3xl font-bold leadi sm:text-5xl">
               Ac mattis
               <span className="text-rose-600">senectus</span>erat pharetra
             </h1>

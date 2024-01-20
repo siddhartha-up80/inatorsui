@@ -4,7 +4,7 @@ import React from "react";
 
 const Bannerblog2 = () => {
   return (
-    <div>
+    <div className="w-full">
       <div className="shadow-md">
         <div className="container max-w-4xl px-10 py-6 mx-auto rounded-lg shadow-sm ">
           <div className="flex items-center justify-between">
@@ -40,9 +40,7 @@ const Bannerblog2 = () => {
                   alt="avatar"
                   className="object-cover w-10 h-10 mx-4 rounded-full bg-gray-500"
                 />
-                <span className="hover:underline ">
-                  Leroy Jenkins
-                </span>
+                <span className="hover:underline ">Leroy Jenkins</span>
               </Link>
             </div>
           </div>

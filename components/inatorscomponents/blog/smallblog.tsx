@@ -4,7 +4,7 @@ import Image from 'next/image';
 
 const SmallBlog = () => {
   return (
-    <div>
+    <div className="w-full">
       <section className="py-6 sm:py-12 shadow-md">
         <div className="container p-6 mx-auto space-y-8">
           <div className="space-y-2 text-center">
@@ -20,22 +20,19 @@ const SmallBlog = () => {
                 aria-label="Te nulla oportere reprimique his dolorum"
               >
                 <Image
-
                   width={500}
                   height={500}
-                  alt=''
+                  alt=""
                   className="object-cover w-full h-52"
                   src="https://source.unsplash.com/200x200/?fashion?1"
                 />
               </Link>
               <div className="flex flex-col flex-1 p-6">
                 <Link
-
                   href="#"
                   aria-label="Te nulla oportere reprimique his dolorum"
                 ></Link>
                 <Link
-
                   href="#"
                   className="text-xs tracki uppercase hover:underline text-rose-600"
                 >
@@ -58,19 +55,17 @@ const SmallBlog = () => {
                 <Image
                   width={500}
                   height={500}
-                  alt=''
+                  alt=""
                   className="object-cover w-full h-52"
                   src="https://source.unsplash.com/200x200/?fashion?2"
                 />
               </Link>
               <div className="flex flex-col flex-1 p-6">
                 <Link
-
                   href="#"
                   aria-label="Te nulla oportere reprimique his dolorum"
                 ></Link>
                 <Link
-
                   href="#"
                   className="text-xs tracki uppercase hover:underline text-rose-600"
                 >
@@ -93,19 +88,17 @@ const SmallBlog = () => {
                 <Image
                   width={500}
                   height={500}
-                  alt=''
+                  alt=""
                   className="object-cover w-full h-52"
                   src="https://source.unsplash.com/200x200/?fashion?3"
                 />
               </Link>
               <div className="flex flex-col flex-1 p-6">
                 <Link
-
                   href="#"
                   aria-label="Te nulla oportere reprimique his dolorum"
                 ></Link>
                 <Link
-
                   href="#"
                   className="text-xs tracki uppercase hover:underline text-rose-600"
                 >
@@ -128,19 +121,17 @@ const SmallBlog = () => {
                 <Image
                   width={500}
                   height={500}
-                  alt=''
+                  alt=""
                   className="object-cover w-full h-52"
                   src="https://source.unsplash.com/200x200/?fashion?4"
                 />
               </Link>
               <div className="flex flex-col flex-1 p-6">
                 <Link
-
                   href="#"
                   aria-label="Te nulla oportere reprimique his dolorum"
                 ></Link>
                 <Link
-
                   href="#"
                   className="text-xs tracki uppercase hover:underline text-rose-600"
                 >
