@@ -3,11 +3,14 @@ import React from 'react'
 import Link from 'next/link';
 
 const MainFooter = () => {
+    // const footerStyles = {
+    //   boxShadow: "0px -5px 10px rgba(0, 0, 0, 0.03)", // Adjust values as needed
+    // };
   return (
-    <div className="mt-10">
-      <footer className="py-6 text-gray-900 w-full">
+    <div className="mt-10 shadow-md">
+      <footer className="py-6 text-gray-900 w-full" >
         <div className="container px-6 mx-auto space-y-6 divide-y divide-gray-400 md:space-y-12 divide-opacity-50">
-          <div className="flex items-center pt-6 justify-between">
+          <div className="flex items-center justify-between">
             <div className="col-span-full md:pb-0 md:col-span-6">
               <Link
                
