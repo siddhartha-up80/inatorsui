@@ -11,9 +11,7 @@ const Teambasic = () => {
           <div className="flex flex-col text-center w-full mb-20">
             <h1 className="text-2xl font-medium title-font mb-4 ">OUR TEAM</h1>
             <p className="lg:w-2/3 mx-auto leading-relaxed text-base">
-              Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical
-              gentrify, subway tile poke farm-to-table. Franzen you probably
-              haven't heard of them.
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio sed id tenetur enim quaerat, ad error molestiae quis repellendus officiis eveniet non eum facilis ea quidem ullam minus totam veniam!
             </p>
           </div>
           <div className="flex flex-wrap -m-4 gap-4 justify-center">
