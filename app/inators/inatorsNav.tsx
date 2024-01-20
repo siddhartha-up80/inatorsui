@@ -143,10 +143,6 @@ const components = [
     path: "/inators/testimonial",
   },
   {
-    name: "Timeline",
-    path: "/inators/timeline",
-  },
-  {
     name: "Toggle",
     path: "/inators/toggle",
   },
