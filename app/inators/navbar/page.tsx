@@ -28,7 +28,7 @@ export default function Navbarbasic() {
   ];
 
   return (
-    <header className="p-2 shadow text-gray-800 w-full h-max">
+    <div className="pb-16"><header className="p-2 shadow text-gray-800 w-full h-max bg-white dark:bg-black dark:text-white fixed top-0">
       <div className="flex justify-between">
         <div className="flex">
           {!state ? (
@@ -71,7 +71,7 @@ export default function Navbarbasic() {
           <Menu />
         </button>
       </div>
-    </header>
+    </header></div>
   );
 }
 `,
@@ -98,7 +98,7 @@ export default function Navbarend() {
   ];
 
   return (
-    <header className="p-2 shadow text-gray-800 w-full h-max">
+    <div className="pb-16"><header className="p-2 shadow text-gray-800 w-full h-max bg-white dark:bg-black dark:text-white fixed top-0">
       <div className="flex justify-between">
         {!state ? (
           <Link
@@ -141,7 +141,7 @@ export default function Navbarend() {
           <Menu />
         </button>
       </div>
-    </header>
+    </header></div>
   );
 }
 `,
@@ -168,7 +168,7 @@ export default function Navbarcenter() {
   ];
 
   return (
-    <header className="p-2 shadow text-gray-800 w-full h-max">
+    <div className="pb-16"><header className="p-2 shadow text-gray-800 w-full h-max bg-white dark:bg-black dark:text-white fixed top-0">
       <div className="flex justify-between">
         {!state ? (
           <Link
@@ -210,7 +210,7 @@ export default function Navbarcenter() {
           <Menu />
         </button>
       </div>
-    </header>
+    </header></div>
   );
 }
 `,
