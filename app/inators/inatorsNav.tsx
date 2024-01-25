@@ -98,6 +98,9 @@ const components = [
     path: "/inators/pricing",
   },
   {
+    name: "Product",
+    path: "/inators/product",
+  }, {
     name: "Profile",
     path: "/inators/profile",
   },
