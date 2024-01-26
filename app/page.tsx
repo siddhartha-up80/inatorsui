@@ -18,8 +18,10 @@ export default function Home() {
               Inators UI is a collection of UI components and templates based on
               Tailwind and Shadcn/ui, just copy and use
             </p>{" "}
-            <div className="mb-8 text-lg leading-snug md:w-[350px] ">
-              <InstallCode installation={"npx shadcn-ui@latest init"} />
+            <div className="flex justify-center items-center md:justify-start w-full">
+              <div className="mb-8 text-lg leading-snug">
+                <InstallCode installation={"npx shadcn-ui@latest init"} />
+              </div>
             </div>
             <div className="flex flex-col space-y-4 sm:items-center sm:justify-center sm:flex-row sm:space-y-0 sm:space-x-4 lg:justify-start">
               <Link href="/inators">

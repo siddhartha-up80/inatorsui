@@ -11,7 +11,7 @@ const Page = () => {
           {/* <p className="text-lg font-medium text-center">
             One star will give me a motivation
           </p> */}
-          <div className="flex flex-col space-y-4 sm:space-y-0 sm:flex-row sm:space-x-6">
+          <div className="flex flex-col space-y-4 sm:space-y-0 sm:flex-row sm:space-x-6 items-center">
             <Link href="https://github.com/siddhartha-up80" target="_blank">
               <Button className="text-lg bg-rose-600">Star this on GitHub</Button>
             </Link>
