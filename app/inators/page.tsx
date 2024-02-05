@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 const Page = () => {
   return (
@@ -23,7 +24,9 @@ const Page = () => {
       </section>
 
       <section className="">
-        <img
+        <Image
+        height="1100"
+        width="1200"
           src="https://images.unsplash.com/photo-1545239351-ef35f43d514b?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
           alt=""
           className="md:w-[60vw] h-[70vh] object-cover mx-auto rounded-md shadow-md"
