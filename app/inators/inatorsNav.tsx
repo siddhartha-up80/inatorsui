@@ -41,9 +41,19 @@ const components = [
   {
     name: "Contact",
     path: "/inators/contact",
-  },{
+  },
+  {
     name: "Dialog",
     path: "/inators/dialog",
+  },
+  {
+    name: "Drawer",
+    path: "/inators/drawer",
+  },
+
+  {
+    name: "Dropdown",
+    path: "/inators/dropdown",
   },
   {
     name: "Error",
@@ -74,6 +84,10 @@ const components = [
     path: "/inators/hero",
   },
   {
+    name: "Hovercard",
+    path: "/inators/hovercard",
+  },
+  {
     name: "Input",
     path: "/inators/input",
   },
@@ -85,7 +99,11 @@ const components = [
     name: "Login",
     path: "/inators/login",
   },
- {
+  {
+    name: "Menu",
+    path: "/inators/menu",
+  },
+  {
     name: "Navbar",
     path: "/inators/navbar",
   },
@@ -100,7 +118,8 @@ const components = [
   {
     name: "Product",
     path: "/inators/product",
-  }, {
+  },
+  {
     name: "Profile",
     path: "/inators/profile",
   },
@@ -195,7 +214,6 @@ const InatorsNav = () => {
                 type="button"
                 className="font-semibold bg-rose-600 shadow-md"
                 onClick={filterComponents}
-
               >
                 Search
               </Button>
