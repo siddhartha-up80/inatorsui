@@ -3,176 +3,12 @@
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import Link from "next/link";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
+import Types from "./list";
 
-const components = [
-  {
-    name: "Article",
-    path: "/inators/article",
-  },
-  {
-    name: "Banner",
-    path: "/inators/banner",
-  },
-  {
-    name: "Blog",
-    path: "/inators/blog",
-  },
-  {
-    name: "Breadcrumb",
-    path: "/inators/breadcrumb",
-  },
-  {
-    name: "Button",
-    path: "/inators/button",
-  },
-  {
-    name: "Call to action",
-    path: "/inators/calltoaction",
-  },
-  {
-    name: "Card",
-    path: "/inators/card",
-  },
-  {
-    name: "Carousel",
-    path: "/inators/carousel",
-  },
-  {
-    name: "Contact",
-    path: "/inators/contact",
-  },
-  {
-    name: "Dialog",
-    path: "/inators/dialog",
-  },
-  {
-    name: "Drawer",
-    path: "/inators/drawer",
-  },
-
-  {
-    name: "Dropdown",
-    path: "/inators/dropdown",
-  },
-  {
-    name: "Error",
-    path: "/inators/error",
-  },
-  {
-    name: "Faq",
-    path: "/inators/faq",
-  },
-  {
-    name: "Feature",
-    path: "/inators/feature",
-  },
-  {
-    name: "Footer",
-    path: "/inators/footer",
-  },
-  {
-    name: "Form",
-    path: "/inators/form",
-  },
-  {
-    name: "Gallery",
-    path: "/inators/gallery",
-  },
-  {
-    name: "Hero",
-    path: "/inators/hero",
-  },
-  {
-    name: "Hovercard",
-    path: "/inators/hovercard",
-  },
-  {
-    name: "Input",
-    path: "/inators/input",
-  },
-  {
-    name: "Loading",
-    path: "/inators/loading",
-  },
-  {
-    name: "Login",
-    path: "/inators/login",
-  },
-  {
-    name: "Menu",
-    path: "/inators/menu",
-  },
-  {
-    name: "Navbar",
-    path: "/inators/navbar",
-  },
-  {
-    name: "Pagination",
-    path: "/inators/pagination",
-  },
-  {
-    name: "Pricing",
-    path: "/inators/pricing",
-  },
-  {
-    name: "Product",
-    path: "/inators/product",
-  },
-  {
-    name: "Profile",
-    path: "/inators/profile",
-  },
-  {
-    name: "Review",
-    path: "/inators/review",
-  },
-  {
-    name: "Shopping cart",
-    path: "/inators/shoppingcart",
-  },
-  {
-    name: "Sidebar",
-    path: "/inators/sidebar",
-  },
-
-  {
-    name: "Snackbar Alerts",
-    path: "/inators/snackbar",
-  },
-  {
-    name: "Stats",
-    path: "/inators/stats",
-  },
-  {
-    name: "Steps",
-    path: "/inators/steps",
-  },
-  {
-    name: "Table",
-    path: "/inators/table",
-  },
-  {
-    name: "Tabs",
-    path: "/inators/tabs",
-  },
-  {
-    name: "Team",
-    path: "/inators/team",
-  },
-  {
-    name: "Testimonial",
-    path: "/inators/testimonial",
-  },
-  {
-    name: "Toggle",
-    path: "/inators/toggle",
-  },
-  {
-    name: "Weather",
-    path: "/inators/weather",
-  },
-];
+const components = Types.map((type) => {
+  return type.component;
+}).sort();
 
 const InatorsNav = () => {
   const [searchTerm, setSearchTerm] = useState("");
@@ -180,10 +16,21 @@ const InatorsNav = () => {
 
   const filterComponents = () => {
     const filtered = components.filter((component) =>
-      component.name.toLowerCase().includes(searchTerm.toLowerCase())
+      component.toLowerCase().includes(searchTerm.toLowerCase())
     );
-    setFilteredComponents(filtered);
+
+    if (searchTerm === "") {
+      setFilteredComponents(components);
+    } else {
+      setFilteredComponents(filtered);
+    }
   };
+
+  useEffect(() => {
+    if (searchTerm === "") {
+      setFilteredComponents(components);
+    }
+  }, [searchTerm]);
 
   return (
     <div className="max-w-7xl mx-auto container">
@@ -224,10 +71,10 @@ const InatorsNav = () => {
 
       <section>
         <div className="flex flex-wrap gap-2 justify-center">
-          {filteredComponents.map((component) => {
+          {filteredComponents.map((component, index) => {
             return (
-              <Link href={component.path} key={component.name}>
-                <Button className="shadow-md">{component.name}</Button>
+              <Link href={`/inators/${component}`} key={index}>
+                <Button className="shadow-md">{component}</Button>
               </Link>
             );
           })}
