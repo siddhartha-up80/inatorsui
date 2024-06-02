@@ -33,6 +33,7 @@ export default function RootLayout({
         name="google-site-verification"
         content="wuKkVFD1dhs31EjQNk81yBbw-temshhMPPc8JGAUC94"
       />
+      <meta name="google-adsense-account" content="ca-pub-9924264215171914" />
       <body className={inter.className}>
         <div className="">
           <MainNav />
