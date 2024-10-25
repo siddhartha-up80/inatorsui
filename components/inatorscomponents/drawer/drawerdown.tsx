@@ -15,7 +15,7 @@ import {
   DrawerTrigger,
 } from "@/components/ui/drawer";
 
-export function DrawerDown() {
+export default function Drawerdown() {
   const [goal, setGoal] = React.useState(350);
 
   function onClick(adjustment: number) {

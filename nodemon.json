@@ -1,0 +1,5 @@
+{
+  "watch": ["components/inatorscomponents"],
+  "ext": "js,jsx,ts,tsx",
+  "exec": "node app/generateTypesList.js"
+}
