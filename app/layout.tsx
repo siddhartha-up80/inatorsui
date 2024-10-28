@@ -5,8 +5,10 @@ import MainNav from "@/components/mainNav";
 import MainFooter from "@/components/mainFooter";
 import { Toaster } from "sonner";
 import Head from "next/head";
-
-const inter = Inter({ subsets: ["latin"] });
+import Navbar from "@/components/mainnavbar";
+import { links } from "@/config/links";
+import { ThemeProvider } from "@/components/theme-provider";
+import { cn } from "@/lib/utils";
 
 export const metadata: Metadata = {
   title: "InatorsUI | Shadcn-ui based components for nextjs developers",
@@ -42,17 +44,25 @@ export default function RootLayout({
           crossOrigin="anonymous"
         ></script>
       </Head>
-      <body className={inter.className}>
-        <div className="">
-          <MainNav />
-        </div>
 
-        <div className="min-h-screen mt-16">{children}</div>
-
-        <div>
-          <MainFooter />
-        </div>
-        <Toaster />
+      <body className={cn("min-h-screen bg-background font-sans antialiased")}>
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="dark"
+          disableTransitionOnChange
+        >
+          <div className="relative flex min-h-screen flex-col bg-background">
+            <Navbar items={links} />
+            <main className="flex-1">{children}</main>
+            <MainFooter />
+          </div>
+          <Toaster
+            duration={1500}
+            richColors
+            visibleToasts={2}
+            position="top-center"
+          />
+        </ThemeProvider>
       </body>
     </html>
   );

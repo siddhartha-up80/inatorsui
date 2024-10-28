@@ -1,3 +1,4 @@
+
 // import statements of all components
 import Basicarticle from "@/components/inatorscomponents/article/basicarticle";
 import Buttonarticle from "@/components/inatorscomponents/article/buttonarticle";
